@@ -1,19 +1,3 @@
-/*
-
-* Based on Cover by https://twitter.com/mdo"  @mdo
-* added cover image and background color to match (green)
-*
-* Globals
-
-*/
-
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: black; /*the learn more tab color and click to start now*/
-}
-
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
@@ -24,15 +8,7 @@ a:hover {
   border: 1px solid #fff;
 }
 
-
-/*
- * Base structure
- */
-
-html,
-body {
-/*css for full size background image*/
-  /*background: url(http://p1.pichost.me/i/66/1910819.jpg) no-repeat center center fixed; */
+html, body {
   background: url(https://static1.squarespace.com/static/5511b2cee4b09be45a553df0/t/5514824fe4b01178dd79d866/1427407469387/Pomona_Campus.jpg?format=1500w) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -44,22 +20,23 @@ body {
   color: #fff; /*this is the whole body text color, the paragraph discription area*/
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5); /*shadow for the paragraph text*/
- 
 }
 
-/* Extra markup and styles for table-esque vertical and horizontal centering */
+
 .site-wrapper {
   display: table;
   width: 100%;
-  height: 100%; /* For at least Firefox */
+  height: 100%;
   min-height: 100%;
   -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
           box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
+
 .site-wrapper-inner {
   display: table-cell;
   vertical-align: top;
 }
+
 .cover-container {
   margin-right: auto;
   margin-left: auto;
@@ -70,60 +47,27 @@ body {
   padding: 30px; /*how close the top tabs are to the u finder word */
 }
 
-
-/*
- * Header
- */
-.masthead-brand {
-  margin-top: 10px; /*how far up/down the cpp tab is */
-  margin-bottom: 10px;
-}
-
 .masthead-nav > li {
   display: inline-block;
 }
+
 .masthead-nav > li + li {
   margin-left: 40px; /*the other two tabs distance*/
 }
-.masthead-nav > li > a { /*this stuff edits the buttons full screen, features, contacts*/
+
+.masthead-nav > li > a { /*this stuff edits the buttons features, contacts*/
   padding-right: 0;
   padding-left: 0;
   font-size: 25px; 
   font-weight: bold;
-  color: #fff; /* IE8 proofing */
+  color: #fff;
   color: rgba(255,255,255,.95); /*the color of the two tabs not about us tho */
-  /*border-bottom: 2px solid transparent;*/ /*this added a second underline under about us*/
 }
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
-  background-color: transparent;/*the hover color when over the tabs */
-  border-bottom-color: #a9a9a9; 
-  border-bottom-color: rgba(255,255,255,.25); /*underline color on the tabs*/
-}
-.masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
-  color: #fff; /*about us color*/
-  border-bottom-color: #fff; /*about us underline color*/
-}
-
-@media (min-width: 768px) {
-  .masthead-brand {
-    float: left; /*where cpp tab is placed*/
-  }
-  .masthead-nav {
-    float: right; /*where the other two tabs are located*/
-  }
-}
-
-
-/*
- * Cover
- */
 
 .cover {
   padding: 0 20px; /*the u finder padding*/
 }
+
 .cover .btn-lg {
 	border-radius: 12px;
 	background-color: #00BFFF;
@@ -133,20 +77,10 @@ body {
     text-decoration: none;
 }
 
-
-/*
- * Footer
- */
-
 .mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5); /*the verification add your name color*/
+  color: #999;
+  color: rgba(255,255,255,.5); 
 }
-
-
-/*
- * Affix and center
- */
 
 @media (min-width: 768px) {
   /* Pull out the header and footer */
@@ -154,14 +88,17 @@ body {
     position: fixed;
     top: 0; /*where the tabs or placed up or down*/
   }
+  
   .mastfoot {
     position: fixed;
     bottom: 0;
   }
+  
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle; /*moves the ufinder and center text*/
   }
+  
   /* Handle the widths */
   .masthead,
   .mastfoot,

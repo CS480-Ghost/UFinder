@@ -1,14 +1,7 @@
-/***
-Bootstrap Line Tabs by @keenthemes
-A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
-Licensed under MIT
-***/
-
 .content {
     padding-top: 30px;
 }
 
-/* Heading */
 .heading {
     z-index: 1;
     position: relative;
@@ -42,7 +35,6 @@ Licensed under MIT
     color: #8693a7;
 }
 
-/* Team Members */
 .team-members {
     width: 49%; /*not 50 cuz there wouldnt be enough room*/
     cursor: pointer;

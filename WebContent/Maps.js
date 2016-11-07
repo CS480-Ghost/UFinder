@@ -22,7 +22,6 @@ function bathroomFunction() {
   var map = new google.maps.Map(mapCanvas, mapOptions);
   /*finds the map and resets all of it again*/
   
-
   /*puts markers on where you want*/
    br1 = {lat: 34.058524, lng: -117.824785}; <!-- to display markers on specific places-->
    br2 = {lat: 34.057617, lng: -117.823385};
@@ -40,7 +39,6 @@ function microwaveFunction() {
   var map = new google.maps.Map(mapCanvas, mapOptions);
   /*finds the map and resets all of it again*/
   
-
     /*puts markers on where you want*/
    mw1 = {lat: 34.057564, lng: -117.823525}; <!-- to display markers on specific places-->
    mw2 = {lat: 34.057831, lng: -117.823010};

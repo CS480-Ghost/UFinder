@@ -3,7 +3,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-
 <script src="Maps.js"></script>
 <div class="dropdown">
   <button onclick="myFunction()" class="dropbtn"><strong>Filter Your Search!</strong></button>
@@ -23,6 +22,29 @@
 </h1>
 
 <div id="map" style="width:65%;height:500px; outline: #ffffff solid thick;"></div>
+
+<!-- THIS IS THE MODAL CODE -->
+<div id="myModal" class="modal">
+
+  <!-- ITS CONTENT -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Building 8</h2>
+    </div>
+    <div class="modal-body">
+      <p>All Bathrooms Within Building 8</p>
+      <img id = "image" src="https://scontent.xx.fbcdn.net/t31.0-8/q82/p960x960/12615594_1101749653210976_8751263346063708335_o.jpg"
+                     alt="" width="300" height="300" ></img>
+      <p>This is one fine looking bathroom, some would say the best</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Bathrooms</h3>
+    </div>
+  </div>
+
+</div>
+
 
 <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 <script src="myscripts.js"></script>

@@ -63,7 +63,8 @@ function bathroomFunction() {
   [34.059584,-117.824255, "https://scontent.xx.fbcdn.net/v/t1.0-9/10580050_10203823057004547_4192991177799506923_n.jpg?oh=342a30958c834023a0268df58ddc6e45&oe=58A8B09F"]
   ];
    var marker;
-   for (i = 0; i < 4; i++){
+   for (var i = 0; i < 4; i++){
+   var num = 0;
 		marker = new google.maps.Marker({position: new google.maps.LatLng(locations[i][0], locations[i][1]), map: map, clickable: true});
 	
 	
@@ -79,8 +80,9 @@ var picChange = document.getElementById('image');
 
 //open the modal
 marker.addListener('click', function(){
-	picChange.src = locations[1][2]; //need to use i location, location[i][2], like that
+	picChange.src = locations[num][2]; //need to use i location, location[i][2], like that
     modal.style.display = "block";
+    num++;
     });
 
 //close the modal
@@ -124,7 +126,6 @@ function microwaveFunction() {
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
-
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {

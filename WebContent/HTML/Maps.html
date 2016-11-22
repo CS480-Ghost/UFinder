@@ -4,24 +4,36 @@
 <html>
 <body>
 <script src="Maps.js"></script>
-<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn"><strong>Filter Your Search!</strong></button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#" id="Bathrooms"><strong>Bathrooms</strong></a>
-    <a href="#"><strong>Water Stations</strong></a>
-    <a href="#" id="Microwaves"><strong>Microwaves</strong></a>
-  </div>
-</div>
+
+
+
+
+
+
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="#news" style="padding: 10px 220px; font-size: 23px;" id="coverName">Cal Poly Pomona Campus Maps</a></li>
+  <li style="float:right">
+		  <button onclick="myFunction()" class="dropbtn"><strong>Filter Your Search!</strong></button>
+		  <div id="myDropdown" class="dropdown-content">
+		    <a href="#" id="Bathrooms" class="test"><strong>Bathrooms</strong></a>
+		    <a href="#" id="WaterStations"><strong>Water Stations</strong></a>
+		    <a href="#" id="Microwaves"><strong>Microwaves</strong></a>
+		</div>
+		</li>
+</ul>
+
+
+
+
 
 <h1>
 	<style>
-		body {background-color: #FFFED3;}
-		h1   {color: #13640E; text-shadow: 1px 1px yellow; font-size: 45px;}
+		body {background-color: #B7B7B7;}
 	</style>
-	Cal Poly Pomona Campus Map
 </h1>
 
-<div id="map" style="width:65%;height:500px; outline: #ffffff solid thick;"></div>
+<div id="map" style="width:65%;height:500px; outline: #C2B943 solid thick; margin: 0 auto;"></div>
 
 <!-- THIS IS THE MODAL CODE -->
 <div id="myModal" class="modal">

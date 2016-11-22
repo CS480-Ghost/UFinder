@@ -72,7 +72,44 @@
 
 
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
 
+li {
+    float: left;
+}
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+#Bathrooms, #WaterStations, #Microwaves{
+ background-color: #EBEBD9;  
+}
+#coverName{
+ background-color: #333;  
+ color: #13640E;
+  text-shadow: 0.125px 1px yellow;
+  font-size: 16px;
+}
+
+
+.active {
+    background-color: #4CAF50;
+}
 
 
 
@@ -90,15 +127,12 @@
     color: white;
     padding: 16px;
     width: 450px;
-    height: 65px;
+    height: 46px;
     font-size: 16px;
     border: none;
     cursor: pointer;
 }
 
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
-}
 
 .dropdown {
     position: relative;
@@ -114,19 +148,20 @@
     background-color: #f9f9f9;
     min-width: 450px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
     color: black;
-    background-color: #CDF6F3;
+    background-color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color: gray}
 
 /* shows the dropdown menu*/
 .show {display:block;}

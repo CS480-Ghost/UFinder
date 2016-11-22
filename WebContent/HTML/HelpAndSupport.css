@@ -17,7 +17,7 @@
     display: block;
     margin: -30px -30px 10px -30px;
     color: #FFF;
-    background: #58B4D1; /*banner color*/
+    background: #213A85; /*banner color*/
     text-shadow: 1px 1px 1px #949494;
     border-radius: 5px 5px 0px 0px;
     -webkit-border-radius: 5px 5px 0px 0px;
@@ -70,7 +70,7 @@
     height:30px;
 }
 .smart-green .button {
-    background-color: #58B4D1; /*button color*/
+    background-color: #213A85; /*button color*/
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-border-radius: 5px;
@@ -82,4 +82,6 @@
 .smart-green .button:hover { /*might get rid of since it extends a little to far*/
     background-color: #4793AB; /*button hover color*/
 }
-
+body{
+ background: url(https://static1.squarespace.com/static/5511b2cee4b09be45a553df0/t/5514824fe4b01178dd79d866/1427407469387/Pomona_Campus.jpg?format=1500w) no-repeat center center fixed; 
+ }

@@ -240,8 +240,11 @@ function bathroomFunction() {
        // Within the event listener, "this" refers to the polygon which
        // received the event.
        this.setOptions({
-           strokeColor: '#00ff00',
-           fillColor: '#00ff00'
+           strokeColor: '#000000',
+           strokeOpacity: 0.8,
+           strokeWeight: 2,
+           fillColor: '#ff0000',
+           fillOpacity: 0.35
        });
   });
   
@@ -249,7 +252,10 @@ function bathroomFunction() {
   google.maps.event.addListener(shade8, 'mouseout', function (event) {
        this.setOptions({
            strokeColor: '#ff0000',
-           fillColor: '#ff0000'
+           strokeOpacity: 0.05,
+           strokeWeight: 0.5,
+           fillColor: '#ff0000',
+           fillOpacity: 0.05
        });
   });
   
@@ -273,18 +279,24 @@ function bathroomFunction() {
   google.maps.event.addListener(shade1, 'mouseover', function (event) {
        // Within the event listener, "this" refers to the polygon which
        // received the event.
-       this.setOptions({
-           strokeColor: '#00ff00',
-           fillColor: '#00ff00'
-       });
+      this.setOptions({
+          strokeColor: '#000000',
+          strokeOpacity: 0.8,
+          strokeWeight: 2,
+          fillColor: '#ff0000',
+          fillOpacity: 0.35
+      });
   });
       
   // Listen for when the mouse stops hovering over the polygon    
   google.maps.event.addListener(shade1, 'mouseout', function (event) {
-       this.setOptions({
-           strokeColor: '#ff0000',
-           fillColor: '#ff0000'
-       });
+      this.setOptions({
+          strokeColor: '#ff0000',
+          strokeOpacity: 0.05,
+          strokeWeight: 0.5,
+          fillColor: '#ff0000',
+          fillOpacity: 0.05
+      });
   });
   
   //Listen for clicks on the polygon
@@ -307,18 +319,24 @@ function bathroomFunction() {
   google.maps.event.addListener(shade35, 'mouseover', function (event) {
        // Within the event listener, "this" refers to the polygon which
        // received the event.
-       this.setOptions({
-           strokeColor: '#00ff00',
-           fillColor: '#00ff00'
-       });
+      this.setOptions({
+          strokeColor: '#000000',
+          strokeOpacity: 0.8,
+          strokeWeight: 2,
+          fillColor: '#ff0000',
+          fillOpacity: 0.35
+      });
   });
       
   // Listen for when the mouse stops hovering over the polygon    
   google.maps.event.addListener(shade35, 'mouseout', function (event) {
-       this.setOptions({
-           strokeColor: '#ff0000',
-           fillColor: '#ff0000'
-       });
+      this.setOptions({
+          strokeColor: '#ff0000',
+          strokeOpacity: 0.05,
+          strokeWeight: 0.5,
+          fillColor: '#ff0000',
+          fillOpacity: 0.05
+      });
   });
   //Listen for clicks on the polygon
   google.maps.event.addListener(shade35, 'click', function (event) {
@@ -338,20 +356,24 @@ function bathroomFunction() {
   shade66.setMap(map);
   // Listen for when the mouse hovers over the polygon
   google.maps.event.addListener(shade66, 'mouseover', function (event) {
-       // Within the event listener, "this" refers to the polygon which
-       // received the event.
-       this.setOptions({
-           strokeColor: '#00ff00',
-           fillColor: '#00ff00'
-       });
+      this.setOptions({
+          strokeColor: '#000000',
+          strokeOpacity: 0.8,
+          strokeWeight: 2,
+          fillColor: '#ff0000',
+          fillOpacity: 0.35
+      });
   });
       
   // Listen for when the mouse stops hovering over the polygon    
   google.maps.event.addListener(shade66, 'mouseout', function (event) {
-       this.setOptions({
-           strokeColor: '#ff0000',
-           fillColor: '#ff0000'
-       });
+      this.setOptions({
+          strokeColor: '#ff0000',
+          strokeOpacity: 0.05,
+          strokeWeight: 0.5,
+          fillColor: '#ff0000',
+          fillOpacity: 0.05
+      });
   });
   //Listen for clicks on the polygon
   google.maps.event.addListener(shade66, 'click', function (event) {
@@ -373,18 +395,24 @@ function bathroomFunction() {
   google.maps.event.addListener(shade97, 'mouseover', function (event) {
        // Within the event listener, "this" refers to the polygon which
        // received the event.
-       this.setOptions({
-           strokeColor: '#00ff00',
-           fillColor: '#00ff00'
-       });
+      this.setOptions({
+          strokeColor: '#000000',
+          strokeOpacity: 0.8,
+          strokeWeight: 2,
+          fillColor: '#ff0000',
+          fillOpacity: 0.35
+      });
   });
       
   // Listen for when the mouse stops hovering over the polygon    
   google.maps.event.addListener(shade97, 'mouseout', function (event) {
-       this.setOptions({
-           strokeColor: '#ff0000',
-           fillColor: '#ff0000'
-       });
+      this.setOptions({
+          strokeColor: '#ff0000',
+          strokeOpacity: 0.05,
+          strokeWeight: 0.5,
+          fillColor: '#ff0000',
+          fillOpacity: 0.05
+      });
   });
   //Listen for clicks on the polygon
   google.maps.event.addListener(shade97, 'click', function (event) {
@@ -406,17 +434,23 @@ function bathroomFunction() {
   google.maps.event.addListener(shade15, 'mouseover', function (event) {
        // Within the event listener, "this" refers to the polygon which
        // received the event.
-       this.setOptions({
-           strokeColor: '#00ff00',
-           fillColor: '#00ff00'
-       });
+      this.setOptions({
+          strokeColor: '#000000',
+          strokeOpacity: 0.8,
+          strokeWeight: 2,
+          fillColor: '#ff0000',
+          fillOpacity: 0.35
+      });
   });
   // Listen for when the mouse stops hovering over the polygon    
   google.maps.event.addListener(shade15, 'mouseout', function (event) {
-       this.setOptions({
-           strokeColor: '#ff0000',
-           fillColor: '#ff0000'
-       });
+      this.setOptions({
+          strokeColor: '#ff0000',
+          strokeOpacity: 0.05,
+          strokeWeight: 0.5,
+          fillColor: '#ff0000',
+          fillOpacity: 0.05
+      });
   });
   //Listen for clicks on the polygon
   google.maps.event.addListener(shade15, 'click', function (event) {
@@ -438,17 +472,23 @@ function bathroomFunction() {
   google.maps.event.addListener(shade26, 'mouseover', function (event) {
        // Within the event listener, "this" refers to the polygon which
        // received the event.
-       this.setOptions({
-           strokeColor: '#00ff00',
-           fillColor: '#00ff00'
-       });
+      this.setOptions({
+          strokeColor: '#000000',
+          strokeOpacity: 0.8,
+          strokeWeight: 2,
+          fillColor: '#ff0000',
+          fillOpacity: 0.35
+      });
   });
   // Listen for when the mouse stops hovering over the polygon    
   google.maps.event.addListener(shade26, 'mouseout', function (event) {
-       this.setOptions({
-           strokeColor: '#ff0000',
-           fillColor: '#ff0000'
-       });
+      this.setOptions({
+          strokeColor: '#ff0000',
+          strokeOpacity: 0.05,
+          strokeWeight: 0.5,
+          fillColor: '#ff0000',
+          fillOpacity: 0.05
+      });
   });
   //Listen for clicks on the polygon
   google.maps.event.addListener(shade26, 'click', function (event) {
@@ -470,17 +510,23 @@ function bathroomFunction() {
   google.maps.event.addListener(shade24, 'mouseover', function (event) {
        // Within the event listener, "this" refers to the polygon which
        // received the event.
-       this.setOptions({
-           strokeColor: '#00ff00',
-           fillColor: '#00ff00'
-       });
+      this.setOptions({
+          strokeColor: '#000000',
+          strokeOpacity: 0.8,
+          strokeWeight: 2,
+          fillColor: '#ff0000',
+          fillOpacity: 0.35
+      });
   });
   // Listen for when the mouse stops hovering over the polygon    
   google.maps.event.addListener(shade24, 'mouseout', function (event) {
-       this.setOptions({
-           strokeColor: '#ff0000',
-           fillColor: '#ff0000'
-       });
+      this.setOptions({
+          strokeColor: '#ff0000',
+          strokeOpacity: 0.05,
+          strokeWeight: 0.5,
+          fillColor: '#ff0000',
+          fillOpacity: 0.05
+      });
   });
   //Listen for clicks on the polygon
   google.maps.event.addListener(shade24, 'click', function (event) {
@@ -502,17 +548,23 @@ function bathroomFunction() {
   google.maps.event.addListener(shade25, 'mouseover', function (event) {
        // Within the event listener, "this" refers to the polygon which
        // received the event.
-       this.setOptions({
-           strokeColor: '#00ff00',
-           fillColor: '#00ff00'
-       });
+      this.setOptions({
+          strokeColor: '#000000',
+          strokeOpacity: 0.8,
+          strokeWeight: 2,
+          fillColor: '#ff0000',
+          fillOpacity: 0.35
+      });
   }); 
   // Listen for when the mouse stops hovering over the polygon    
   google.maps.event.addListener(shade25, 'mouseout', function (event) {
-       this.setOptions({
-           strokeColor: '#ff0000',
-           fillColor: '#ff0000'
-       });
+      this.setOptions({
+          strokeColor: '#ff0000',
+          strokeOpacity: 0.05,
+          strokeWeight: 0.5,
+          fillColor: '#ff0000',
+          fillOpacity: 0.05
+      });
   });
   //Listen for clicks on the polygon
   google.maps.event.addListener(shade25, 'click', function (event) {

@@ -1,0 +1,65 @@
+<link rel="stylesheet" type="text/css" href="Maps.css">
+
+<!DOCTYPE html>
+<html>
+<body>
+<script src="Maps.js"></script>
+
+
+
+
+
+
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="#news" style="padding: 10px 220px; font-size: 23px;" id="coverName">Cal Poly Pomona Campus Maps</a></li>
+  <li style="float:right">
+		  <button onclick="myFunction()" class="dropbtn"><strong>Filter Your Search!</strong></button>
+		  <div id="myDropdown" class="dropdown-content">
+		    <a href="#" id="Bathrooms" class="test"><strong>Bathrooms</strong></a>
+		    <a href="#" id="WaterStations"><strong>Water Stations</strong></a>
+		    <a href="#" id="Microwaves"><strong>Microwaves</strong></a>
+		</div>
+		</li>
+</ul>
+
+
+
+
+
+<h1>
+	<style>
+		body {background-color: #B7B7B7;}
+	</style>
+</h1>
+
+<div id="map" style="width:65%;height:80%; outline: #C2B943 solid thick; margin: 0 auto;"></div>
+
+<!-- THIS IS THE MODAL CODE -->
+<div id="myModal" class="modal">
+
+  <!-- ITS CONTENT -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Building 8</h2>
+    </div>
+    <div class="modal-body">
+      <p>All Bathrooms Within Building 8</p>
+      <img id = "image" src="https://scontent.xx.fbcdn.net/t31.0-8/q82/p960x960/12615594_1101749653210976_8751263346063708335_o.jpg"
+                     alt="" width="300" height="300" ></img>
+      <p>This is one fine looking bathroom, some would say the best</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Bathrooms</h3>
+    </div>
+  </div>
+
+</div>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+<script src="myscripts.js"></script>
+
+</body>
+</html>

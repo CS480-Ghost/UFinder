@@ -33,13 +33,18 @@ function bathroomFunction() {
   [34.0570519, 117.82027,  "http://www.sharonkgilbert.com/wp-content/uploads/2015/12/Under-construction-1.png"], // building 26 (University Plaza)
   [34.0569674, -117.82269, "http://www.sharonkgilbert.com/wp-content/uploads/2015/12/Under-construction-1.png"], // building 24 (Music)
   [34.0567052, -117.82223, "http://www.sharonkgilbert.com/wp-content/uploads/2015/12/Under-construction-1.png"] // building 25 (Drama Department/Theatre)
-  ]; 
+  ];
    
   
   var marker;
-   for (var i = 0; i < locations.length; i++){
+  for (var i = 0; i < locations.length; i++){
 	   	var num = 0;
-		marker = new google.maps.Marker({position: new google.maps.LatLng(locations[i][0], locations[i][1]), map: map, clickable: true});
+		marker = new google.maps.Marker({
+			position: new google.maps.LatLng(locations[i][0], locations[i][1]),
+			map: map,
+			});
+		marker.setVisible(false);
+		} 
 		
   
 
@@ -232,7 +237,7 @@ function bathroomFunction() {
   strokeOpacity: 0.05,
   strokeWeight: 0.5,
   fillColor: '#FF0000',
-  fillOpacity: 0.05
+  fillOpacity: 0.5
   });
   shade8.setMap(map);
   // Listen for when the mouse hovers over the polygon
@@ -255,7 +260,7 @@ function bathroomFunction() {
            strokeOpacity: 0.05,
            strokeWeight: 0.5,
            fillColor: '#ff0000',
-           fillOpacity: 0.05
+           fillOpacity: 0.5
        });
   });
   
@@ -272,7 +277,7 @@ function bathroomFunction() {
   strokeOpacity: 0.05,
   strokeWeight: 0.5,
   fillColor: '#FF0000',
-  fillOpacity: 0.05
+  fillOpacity: 0.5
   });
   shade1.setMap(map);
   // Listen for when the mouse hovers over the polygon
@@ -295,7 +300,7 @@ function bathroomFunction() {
           strokeOpacity: 0.05,
           strokeWeight: 0.5,
           fillColor: '#ff0000',
-          fillOpacity: 0.05
+          fillOpacity: 0.5
       });
   });
   
@@ -312,7 +317,7 @@ function bathroomFunction() {
   strokeOpacity: 0.05,
   strokeWeight: 0.5,
   fillColor: '#FF0000',
-  fillOpacity: 0.05
+  fillOpacity: 0.5
   });
   shade35.setMap(map);  
   // Listen for when the mouse hovers over the polygon
@@ -335,7 +340,7 @@ function bathroomFunction() {
           strokeOpacity: 0.05,
           strokeWeight: 0.5,
           fillColor: '#ff0000',
-          fillOpacity: 0.05
+          fillOpacity: 0.5
       });
   });
   //Listen for clicks on the polygon
@@ -351,7 +356,7 @@ function bathroomFunction() {
   strokeOpacity: 0.05,
   strokeWeight: 0.5,
   fillColor: '#FF0000',
-  fillOpacity: 0.05
+  fillOpacity: 0.5
   });
   shade66.setMap(map);
   // Listen for when the mouse hovers over the polygon
@@ -372,7 +377,7 @@ function bathroomFunction() {
           strokeOpacity: 0.05,
           strokeWeight: 0.5,
           fillColor: '#ff0000',
-          fillOpacity: 0.05
+          fillOpacity: 0.5
       });
   });
   //Listen for clicks on the polygon
@@ -388,7 +393,7 @@ function bathroomFunction() {
   strokeOpacity: 0.05,
   strokeWeight: 0.5,
   fillColor: '#FF0000',
-  fillOpacity: 0.05
+  fillOpacity: 0.5
   });
   shade97.setMap(map);
   // Listen for when the mouse hovers over the polygon
@@ -411,7 +416,7 @@ function bathroomFunction() {
           strokeOpacity: 0.05,
           strokeWeight: 0.5,
           fillColor: '#ff0000',
-          fillOpacity: 0.05
+          fillOpacity: 0.5
       });
   });
   //Listen for clicks on the polygon
@@ -427,7 +432,7 @@ function bathroomFunction() {
   strokeOpacity: 0.05,
   strokeWeight: 0.5,
   fillColor: '#FF0000',
-  fillOpacity: 0.05
+  fillOpacity: 0.5
   });
   shade15.setMap(map); 
   // Listen for when the mouse hovers over the polygon
@@ -449,7 +454,7 @@ function bathroomFunction() {
           strokeOpacity: 0.05,
           strokeWeight: 0.5,
           fillColor: '#ff0000',
-          fillOpacity: 0.05
+          fillOpacity: 0.5
       });
   });
   //Listen for clicks on the polygon
@@ -465,7 +470,7 @@ function bathroomFunction() {
   strokeOpacity: 0.05,
   strokeWeight: 0.5,
   fillColor: '#FF0000',
-  fillOpacity: 0.05
+  fillOpacity: 0.5
   });
   shade26.setMap(map); 
   // Listen for when the mouse hovers over the polygon
@@ -487,7 +492,7 @@ function bathroomFunction() {
           strokeOpacity: 0.05,
           strokeWeight: 0.5,
           fillColor: '#ff0000',
-          fillOpacity: 0.05
+          fillOpacity: 0.5
       });
   });
   //Listen for clicks on the polygon
@@ -503,7 +508,7 @@ function bathroomFunction() {
   strokeOpacity: 0.05,
   strokeWeight: 0.5,
   fillColor: '#FF0000',
-  fillOpacity: 0.05
+  fillOpacity: 0.5
   });
   shade24.setMap(map);
   // Listen for when the mouse hovers over the polygon
@@ -525,7 +530,7 @@ function bathroomFunction() {
           strokeOpacity: 0.05,
           strokeWeight: 0.5,
           fillColor: '#ff0000',
-          fillOpacity: 0.05
+          fillOpacity: 0.5
       });
   });
   //Listen for clicks on the polygon
@@ -541,7 +546,7 @@ function bathroomFunction() {
   strokeOpacity: 0.05,
   strokeWeight: 0.5,
   fillColor: '#FF0000',
-  fillOpacity: 0.05
+  fillOpacity: 0.5
   });
   shade25.setMap(map);
   // Listen for when the mouse hovers over the polygon
@@ -563,7 +568,7 @@ function bathroomFunction() {
           strokeOpacity: 0.05,
           strokeWeight: 0.5,
           fillColor: '#ff0000',
-          fillOpacity: 0.05
+          fillOpacity: 0.5
       });
   });
   //Listen for clicks on the polygon
@@ -597,7 +602,7 @@ function bathroomFunction() {
   });
   shademw97.setMap(map);*/
 } 	 
-}
+
 
 function microwaveFunction() {
   var mapCanvas = document.getElementById("map");

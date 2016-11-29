@@ -24,15 +24,15 @@ function bathroomFunction() {
   
   //puts markers on where you want
   var locations = [   <!-- to display markers on specific places-->
-  [34.058524, -117.824785, "http://www.sharonkgilbert.com/wp-content/uploads/2015/12/Under-construction-1.png"], // building 1
-  [34.057617, -117.823385, "https://scontent.xx.fbcdn.net/v/t1.0-1/c1.0.719.719/13511031_10209986551730399_414828524990737921_n.jpg?oh=0dfa548e22dfd292275245fc363d9d0d&oe=58A41DA1"], // building 8 (College of Science)
-  [34.057857, -117.821132, "https://scontent.xx.fbcdn.net/v/t1.0-9/14212166_1232232150130419_8485250524428682934_n.jpg?oh=74eb3ddef14b80dd6e0503640a018212&oe=58D38A2A"], // building 97 (Marketplace)
-  [34.059584, -117.824255, "https://scontent.xx.fbcdn.net/v/t1.0-9/10580050_10203823057004547_4192991177799506923_n.jpg?oh=342a30958c834023a0268df58ddc6e45&oe=58A8B09F"], // building 15 (Library)
-  [34.0563141, -117.82123, "http://www.sharonkgilbert.com/wp-content/uploads/2015/12/Under-construction-1.png"], // building 35 (Bronco Student Center)
-  [34.0558874, -117.82043, "http://www.sharonkgilbert.com/wp-content/uploads/2015/12/Under-construction-1.png"], // building 66 (Bronco Bookstore)
-  [34.0570519, 117.82027,  "http://www.sharonkgilbert.com/wp-content/uploads/2015/12/Under-construction-1.png"], // building 26 (University Plaza)
-  [34.0569674, -117.82269, "http://www.sharonkgilbert.com/wp-content/uploads/2015/12/Under-construction-1.png"], // building 24 (Music)
-  [34.0567052, -117.82223, "http://www.sharonkgilbert.com/wp-content/uploads/2015/12/Under-construction-1.png"] // building 25 (Drama Department/Theatre)
+  [34.058524, -117.824785, "http://www.oakleymotorsports.com/wp-content/uploads/2016/02/22520129_l.jpg"], // building 1
+  [34.057617, -117.823385, "http://www.oakleymotorsports.com/wp-content/uploads/2016/02/22520129_l.jpg"], // building 8 (College of Science)
+  [34.057857, -117.821132, "http://www.oakleymotorsports.com/wp-content/uploads/2016/02/22520129_l.jpg"], // building 97 (Marketplace)
+  [34.059584, -117.824255, "http://www.oakleymotorsports.com/wp-content/uploads/2016/02/22520129_l.jpg"], // building 15 (Library)
+  [34.0563141, -117.82123, "http://www.oakleymotorsports.com/wp-content/uploads/2016/02/22520129_l.jpg"], // building 35 (Bronco Student Center)
+  [34.0558874, -117.82043, "http://www.oakleymotorsports.com/wp-content/uploads/2016/02/22520129_l.jpg"], // building 66 (Bronco Bookstore)
+  [34.0570519, 117.82027,  "http://www.oakleymotorsports.com/wp-content/uploads/2016/02/22520129_l.jpg"], // building 26 (University Plaza)
+  [34.0569674, -117.82269, "http://www.oakleymotorsports.com/wp-content/uploads/2016/02/22520129_l.jpg"], // building 24 (Music)
+  [34.0567052, -117.82223, "http://www.oakleymotorsports.com/wp-content/uploads/2016/02/22520129_l.jpg"] // building 25 (Drama Department/Theatre)
   ];
    
   

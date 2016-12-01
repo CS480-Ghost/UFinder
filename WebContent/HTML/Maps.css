@@ -13,6 +13,7 @@
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
+
 /* Modal Content */
 .modal-content {
     position: relative;
@@ -28,16 +29,19 @@
     animation-duration: 0.4s
 }
 
+
 /* Add Animation */
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
 }
 
+
 @keyframes animatetop {
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
 }
+
 
 /* The Close Button */
 .close {
@@ -47,6 +51,7 @@
     font-weight: bold;
 }
 
+
 .close:hover,
 .close:focus {
     color: #000;
@@ -54,22 +59,22 @@
     cursor: pointer;
 }
 
+
 .modal-header {
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
 }
 
+
 .modal-body {padding: 2px 16px;}
+
 
 .modal-footer {
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
 }
-
-
-
 
 
 ul {
@@ -79,6 +84,7 @@ ul {
     overflow: hidden;
     background-color: #FFF;
 }
+
 
 li {
     float: left;
@@ -94,13 +100,18 @@ li a {
     text-decoration: none;
 }
 
+
 li a:hover:not(.active) {
     background-color: #111;
 }
-#Bathrooms, #WaterStations, #Microwaves{
+
+
+#Bathrooms, #WaterStations, #Microwaves {
  background-color: #EBEBD9;  
 }
-#coverName{
+
+
+#coverName {
  background-color: #FFF;  
  color: #13640E;
   font-size: 16px;
@@ -108,8 +119,7 @@ li a:hover:not(.active) {
 
 
 .active {
-    background-color: #4CAF50;
-    
+    background-color: #4CAF50;  
 }
 
 
@@ -132,6 +142,7 @@ li a:hover:not(.active) {
     display: inline-block;
 }
 
+
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
@@ -142,6 +153,7 @@ li a:hover:not(.active) {
     z-index: 2;
 }
 
+
 /* Links inside the dropdown */
 .dropdown-content a {
     color: black;
@@ -151,8 +163,10 @@ li a:hover:not(.active) {
     display: block;
 }
 
+
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: gray}
+
 
 /* shows the dropdown menu*/
 .show {display:block;}

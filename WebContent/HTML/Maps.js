@@ -13,7 +13,6 @@ function myMap() {
     zoom: 16
   }
   var map = new google.maps.Map(mapCanvas, mapOptions);
-
 }
 
 function bathroomFunction() {
@@ -35,7 +34,6 @@ function bathroomFunction() {
   [34.0567052, -117.82223, "http://www.oakleymotorsports.com/wp-content/uploads/2016/02/22520129_l.jpg"] // building 25 (Drama Department/Theatre)
   ];
    
-  
   var marker;
   for (var i = 0; i < locations.length; i++){
 	   	var num = 0;
@@ -45,20 +43,16 @@ function bathroomFunction() {
 			});
 		marker.setVisible(false);
 		} 
-		
-  
 
   /*
    *  MODAL OPERATIONS
    */
-    
   //gets modal
   var modal = document.getElementById('myModal');
 
   // makes a close modal and adds a picture change variable
   var span = document.getElementsByClassName("close")[0];
   var picChange = document.getElementById('image');
-
 
   //close the modal
   span.onclick = function() {
@@ -71,6 +65,7 @@ function bathroomFunction() {
           modal.style.display = "none";
       }
   }
+  
   // Define the LatLng coordinates for the polygon's path.
   var building8 = [ // coordinates for building 8
   {lat: 34.0590118, lng: -117.82461},
@@ -139,7 +134,6 @@ function bathroomFunction() {
 	  ];
   
   var building15 = [ // coordinates for building 15(Library)
-	  
 	  {lat: 34.0580259, lng: -117.82195},
 	  {lat: 34.0582881, lng: -117.82134},
 	  {lat: 34.0581026, lng: -117.82122},
@@ -164,11 +158,9 @@ function bathroomFunction() {
 	  {lat: 34.0576640 , lng: -117.82201},
 	  {lat: 34.0577717, lng: -117.82208},
 	  {lat: 34.0578673, lng: -117.82187}
-	  
 	  ];
   
   var building26 = [ // coordinates for building 26(University Plaza)
-	  
 	  {lat: 34.0571084, lng: -117.82078},
 	  {lat: 34.0572440, lng: -117.82007},
 	  {lat: 34.0572018, lng: -117.81996},
@@ -180,11 +172,9 @@ function bathroomFunction() {
 	  {lat: 34.0571284, lng: -117.82013},
 	  
 	  {lat: 34.0570240, lng: -117.82076}
-	  
 	  ];
   
   var building24 = [ // coordinates for building 24(Music)
-	  
 	  {lat: 34.0570640 , lng: -117.82338},
 	  {lat: 34.0571284, lng: -117.82321},
 	  {lat: 34.0569196, lng: -117.82308},
@@ -209,11 +199,9 @@ function bathroomFunction() {
 	  {lat: 34.0564890, lng: -117.82297},
 	  {lat: 34.0565307, lng: -117.82300},
 	  {lat: 34.0565146, lng: -117.82304}
-	  
 	  ];
   
   var building25 = [ // coordinates for building 25(Drama/Theatre Department)
-	  
 	  {lat: 34.0567701, lng: -117.82248},
 	  {lat: 34.0568901 , lng: -117.82217},
 	  {lat: 34.0565790, lng: -117.82197},
@@ -226,10 +214,8 @@ function bathroomFunction() {
 	  
 	  {lat: 34.0563968, lng: -117.82234},
 	  {lat: 34.0564312, lng: -117.82227}
-	  
 	  ];
   
-
   // Shade the polygon.
   var shade8 = new google.maps.Polygon({
   paths: building8,
@@ -239,6 +225,7 @@ function bathroomFunction() {
   fillColor: '#FF0000',
   fillOpacity: 0.5
   });
+  
   shade8.setMap(map);
   // Listen for when the mouse hovers over the polygon
   google.maps.event.addListener(shade8, 'mouseover', function (event) {
@@ -268,7 +255,6 @@ function bathroomFunction() {
   google.maps.event.addListener(shade8, 'click', function (event) {
       picChange.src = locations[num][2]; //need to use i location, location[i][2], like that
       modal.style.display = "block";
-      
   });
 
   var shade1 = new google.maps.Polygon({
@@ -279,6 +265,7 @@ function bathroomFunction() {
   fillColor: '#FF0000',
   fillOpacity: 0.5
   });
+  
   shade1.setMap(map);
   // Listen for when the mouse hovers over the polygon
   google.maps.event.addListener(shade1, 'mouseover', function (event) {
@@ -308,7 +295,6 @@ function bathroomFunction() {
   google.maps.event.addListener(shade1, 'click', function (event) {
       picChange.src = locations[num][2]; //need to use i location, location[i][2], like that
       modal.style.display = "block";
-      
   });
   
   var shade35 = new google.maps.Polygon({
@@ -319,6 +305,7 @@ function bathroomFunction() {
   fillColor: '#FF0000',
   fillOpacity: 0.5
   });
+  
   shade35.setMap(map);  
   // Listen for when the mouse hovers over the polygon
   google.maps.event.addListener(shade35, 'mouseover', function (event) {
@@ -343,6 +330,7 @@ function bathroomFunction() {
           fillOpacity: 0.5
       });
   });
+  
   //Listen for clicks on the polygon
   google.maps.event.addListener(shade35, 'click', function (event) {
       picChange.src = locations[num][2]; //need to use i location, location[i][2], like that
@@ -358,6 +346,7 @@ function bathroomFunction() {
   fillColor: '#FF0000',
   fillOpacity: 0.5
   });
+  
   shade66.setMap(map);
   // Listen for when the mouse hovers over the polygon
   google.maps.event.addListener(shade66, 'mouseover', function (event) {
@@ -380,6 +369,7 @@ function bathroomFunction() {
           fillOpacity: 0.5
       });
   });
+  
   //Listen for clicks on the polygon
   google.maps.event.addListener(shade66, 'click', function (event) {
       picChange.src = locations[num][2]; //need to use i location, location[i][2], like that
@@ -395,6 +385,7 @@ function bathroomFunction() {
   fillColor: '#FF0000',
   fillOpacity: 0.5
   });
+  
   shade97.setMap(map);
   // Listen for when the mouse hovers over the polygon
   google.maps.event.addListener(shade97, 'mouseover', function (event) {
@@ -419,6 +410,7 @@ function bathroomFunction() {
           fillOpacity: 0.5
       });
   });
+  
   //Listen for clicks on the polygon
   google.maps.event.addListener(shade97, 'click', function (event) {
       picChange.src = locations[num][2]; //need to use i location, location[i][2], like that
@@ -434,6 +426,7 @@ function bathroomFunction() {
   fillColor: '#FF0000',
   fillOpacity: 0.5
   });
+  
   shade15.setMap(map); 
   // Listen for when the mouse hovers over the polygon
   google.maps.event.addListener(shade15, 'mouseover', function (event) {
@@ -447,6 +440,7 @@ function bathroomFunction() {
           fillOpacity: 0.35
       });
   });
+  
   // Listen for when the mouse stops hovering over the polygon    
   google.maps.event.addListener(shade15, 'mouseout', function (event) {
       this.setOptions({
@@ -457,6 +451,7 @@ function bathroomFunction() {
           fillOpacity: 0.5
       });
   });
+  
   //Listen for clicks on the polygon
   google.maps.event.addListener(shade15, 'click', function (event) {
       picChange.src = locations[num][2]; //need to use i location, location[i][2], like that
@@ -472,6 +467,7 @@ function bathroomFunction() {
   fillColor: '#FF0000',
   fillOpacity: 0.5
   });
+  
   shade26.setMap(map); 
   // Listen for when the mouse hovers over the polygon
   google.maps.event.addListener(shade26, 'mouseover', function (event) {
@@ -485,6 +481,7 @@ function bathroomFunction() {
           fillOpacity: 0.35
       });
   });
+  
   // Listen for when the mouse stops hovering over the polygon    
   google.maps.event.addListener(shade26, 'mouseout', function (event) {
       this.setOptions({
@@ -495,6 +492,7 @@ function bathroomFunction() {
           fillOpacity: 0.5
       });
   });
+  
   //Listen for clicks on the polygon
   google.maps.event.addListener(shade26, 'click', function (event) {
       picChange.src = locations[num][2]; //need to use i location, location[i][2], like that
@@ -510,6 +508,7 @@ function bathroomFunction() {
   fillColor: '#FF0000',
   fillOpacity: 0.5
   });
+  
   shade24.setMap(map);
   // Listen for when the mouse hovers over the polygon
   google.maps.event.addListener(shade24, 'mouseover', function (event) {
@@ -523,6 +522,7 @@ function bathroomFunction() {
           fillOpacity: 0.35
       });
   });
+  
   // Listen for when the mouse stops hovering over the polygon    
   google.maps.event.addListener(shade24, 'mouseout', function (event) {
       this.setOptions({
@@ -533,6 +533,7 @@ function bathroomFunction() {
           fillOpacity: 0.5
       });
   });
+  
   //Listen for clicks on the polygon
   google.maps.event.addListener(shade24, 'click', function (event) {
       picChange.src = locations[num][2]; //need to use i location, location[i][2], like that
@@ -548,6 +549,7 @@ function bathroomFunction() {
   fillColor: '#FF0000',
   fillOpacity: 0.5
   });
+  
   shade25.setMap(map);
   // Listen for when the mouse hovers over the polygon
   google.maps.event.addListener(shade25, 'mouseover', function (event) {
@@ -561,6 +563,7 @@ function bathroomFunction() {
           fillOpacity: 0.35
       });
   }); 
+  
   // Listen for when the mouse stops hovering over the polygon    
   google.maps.event.addListener(shade25, 'mouseout', function (event) {
       this.setOptions({
@@ -571,6 +574,7 @@ function bathroomFunction() {
           fillOpacity: 0.5
       });
   });
+  
   //Listen for clicks on the polygon
   google.maps.event.addListener(shade25, 'click', function (event) {
       picChange.src = locations[num][2]; //need to use i location, location[i][2], like that
@@ -589,7 +593,6 @@ function bathroomFunction() {
 	  {lat: 34.0576556, lng: -117.82324},
 	  {lat: 34.0576156, lng: -117.82323},
 	  {lat: 34.0575923, lng: -117.82330}
-	  
 	  ];
   
   var shademw97 = new google.maps.Polygon({
@@ -602,7 +605,6 @@ function bathroomFunction() {
   });
   shademw97.setMap(map);*/
 } 	 
-
 
 function microwaveFunction() {
   var mapCanvas = document.getElementById("map");

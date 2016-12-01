@@ -4,7 +4,7 @@
 
     max-width: 500px;
     background: #F8F8F8;
-    padding: 30px 30px 20px 30px;
+    padding: 30px 30px 50px 30px;
     font: 12px Arial, Helvetica, sans-serif;
     color: #666;
     border-radius: 5px;
@@ -74,14 +74,13 @@
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-border-radius: 5px;
+    text-decoration: none;
     border: none;
     padding: 10px 25px 10px 25px;
     color: #FFF;
     text-shadow: 1px 1px 1px #949494;
 }
-.smart-green .button:hover { /*might get rid of since it extends a little to far*/
-    background-color: #4793AB; /*button hover color*/
-}
+
 body{
- background: url(https://static1.squarespace.com/static/5511b2cee4b09be45a553df0/t/5514824fe4b01178dd79d866/1427407469387/Pomona_Campus.jpg?format=1500w) no-repeat center center fixed; 
+ background: url(https://static1.squarespace.com/static/5511b2cee4b09be45a553df0/t/5514824fe4b01178dd79d866/1427407469387/Pomona_Campus.jpg?format=1500w); 
  }

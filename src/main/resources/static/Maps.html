@@ -26,6 +26,37 @@
 </h1>
 <div id="map" style="width:80%;height:80%; outline: #C2B943 solid thick; margin: 0 auto;"></div>
 
+<!--Finds user location but resets the map-->
+<button onclick="myLocation()"> Find me </button>
+
+<p id="myloc"></p>
+
+<script type="text/javascript">
+	var loc = document.getElementById('myloc');
+	
+	function myLocation(){
+		if(navigator.geolocation){
+			navigator.geolocation.getCurrentPosition(showPosition);
+		}else{
+			loc.innerHTML = "Location access denied";
+		}
+	}
+	
+		function showPosition(position){
+		/*Map Reset*/
+		var mapCanvas = document.getElementById("map");
+		var mapOptions = {center: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),zoom: 16}
+		var map = new google.maps.Map(mapCanvas, mapOptions);
+
+		/*User Pin*/
+		mySpot = {lat: position.coords.latitude, lng: position.coords.longitude};
+		var greenMarker = new google.maps.Marker({position: mySpot, map: map, icon: 'img/darkgreen_MarkerA.png'});
+		loc.innerHTML = "Longitude: " + position.coords.longitude + "<br> Latitude: " + position.coords.latitude + "<br>";
+	
+	}
+
+</script>
+	
 <!-- THIS IS THE MODAL CODE -->
 <div id="myModal" class="modal">
 

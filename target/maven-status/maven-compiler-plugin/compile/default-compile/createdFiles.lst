@@ -1,0 +1,7 @@
+edu\csupomona\cs480\data\provider\FSUserManager.class
+edu\csupomona\cs480\App.class
+edu\csupomona\cs480\data\UserMap.class
+edu\csupomona\cs480\data\User.class
+edu\csupomona\cs480\data\provider\UserManager.class
+edu\csupomona\cs480\controller\WebController.class
+edu\csupomona\cs480\util\ResourceResolver.class

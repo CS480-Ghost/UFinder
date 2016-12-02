@@ -13,6 +13,7 @@
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
+
 /* Modal Content */
 .modal-content {
     position: relative;
@@ -20,7 +21,7 @@
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 80%;
+    width: 25%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -28,16 +29,19 @@
     animation-duration: 0.4s
 }
 
+
 /* Add Animation */
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
 }
 
+
 @keyframes animatetop {
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
 }
+
 
 /* The Close Button */
 .close {
@@ -47,6 +51,7 @@
     font-weight: bold;
 }
 
+
 .close:hover,
 .close:focus {
     color: #000;
@@ -54,13 +59,16 @@
     cursor: pointer;
 }
 
+
 .modal-header {
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
 }
 
+
 .modal-body {padding: 2px 16px;}
+
 
 .modal-footer {
     padding: 2px 16px;
@@ -69,16 +77,14 @@
 }
 
 
-
-
-
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #FFF;
 }
+
 
 li {
     float: left;
@@ -88,38 +94,33 @@ li {
 li a {
     display: block;
     color: white;
+    height: 20px;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
+
 li a:hover:not(.active) {
     background-color: #111;
 }
-#Bathrooms, #WaterStations, #Microwaves{
+
+
+#Bathrooms, #WaterStations, #Microwaves {
  background-color: #EBEBD9;  
 }
-#coverName{
- background-color: #333;  
+
+
+#coverName {
+ background-color: #FFF;  
  color: #13640E;
-  text-shadow: 0.125px 1px yellow;
   font-size: 16px;
 }
 
 
 .active {
-    background-color: #4CAF50;
+    background-color: #4CAF50;  
 }
-
-
-
-
-
-
-
-
-
-
 
 
 .dropbtn {
@@ -127,7 +128,7 @@ li a:hover:not(.active) {
     color: white;
     padding: 16px;
     width: 450px;
-    height: 46px;
+    height: 48px;
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -141,6 +142,7 @@ li a:hover:not(.active) {
     display: inline-block;
 }
 
+
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
@@ -151,6 +153,7 @@ li a:hover:not(.active) {
     z-index: 2;
 }
 
+
 /* Links inside the dropdown */
 .dropdown-content a {
     color: black;
@@ -160,8 +163,10 @@ li a:hover:not(.active) {
     display: block;
 }
 
+
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: gray}
+
 
 /* shows the dropdown menu*/
 .show {display:block;}

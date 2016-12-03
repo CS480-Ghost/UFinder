@@ -21,6 +21,23 @@ function bathroomFunction() {
   var map = new google.maps.Map(mapCanvas, mapOptions);
   /*finds the map and resets all of it again*/
   
+   /*Location access code forced to go within each function as I cannot 
+	pass the same Map (to draw the new marker onto) to other functions*/
+	var loc = document.getElementById('myloc');
+		if(navigator.geolocation){
+			navigator.geolocation.getCurrentPosition(showPosition);
+		}else{
+			loc.innerHTML = "Location access denied";
+		}
+	
+	function showPosition(position){
+		mySpot = {lat: position.coords.latitude, lng: position.coords.longitude};
+		var greenMarker = new google.maps.Marker({position: mySpot, map: map, icon: 'img/darkgreen_MarkerA.png'});
+		loc.innerHTML = "Longitude: " + position.coords.longitude + "<br> Latitude: " + position.coords.latitude + "<br>";
+  
+	}
+	
+	
   //puts markers on where you want
   var locations = [   <!-- to display markers on specific places-->
   [34.058524, -117.824785, "http://www.oakleymotorsports.com/wp-content/uploads/2016/02/22520129_l.jpg"], // building 1
@@ -1702,6 +1719,7 @@ function bathroomFunction() {
   fillOpacity: 0.15
   });
   shademw97.setMap(map);*/
+  
 } 	 
 
 function microwaveFunction() {
@@ -1710,6 +1728,24 @@ function microwaveFunction() {
   var map = new google.maps.Map(mapCanvas, mapOptions);
   /*finds the map and resets all of it again*/
   
+  
+  /*Location access code forced to go within each function as I cannot 
+	pass the same Map (to draw the new marker onto) to other functions*/
+	var loc = document.getElementById('myloc');
+		if(navigator.geolocation){
+			navigator.geolocation.getCurrentPosition(showPosition);
+		}else{
+			loc.innerHTML = "Location access denied";
+		}
+	
+	function showPosition(position){
+		mySpot = {lat: position.coords.latitude, lng: position.coords.longitude};
+		var greenMarker = new google.maps.Marker({position: mySpot, map: map, icon: 'img/darkgreen_MarkerA.png'});
+		loc.innerHTML = "Longitude: " + position.coords.longitude + "<br> Latitude: " + position.coords.latitude + "<br>";
+  
+	}
+  
+    
     /*puts markers on where you want*/
    mw1 = {lat: 34.057564, lng: -117.823525}; <!-- to display markers on specific places-->
    mw2 = {lat: 34.057831, lng: -117.823010};
